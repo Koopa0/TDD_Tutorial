@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:tdd_tutorial/core/utils/typedef.dart';
 import 'package:tdd_tutorial/src/authentication/domain/entities/user.dart';
 
