@@ -1,6 +1,6 @@
 # TDD 步驟 3: Domain - Usecases
 
-在測試驅動開發（TDD）的第三步，我們專注於定義應用的業務邏輯，即 `Usecases`。這些 `Usecases` 是應用中實現特定功能的元件，它們依賴於領域層的 `Repositories`。以下是對您提供的兩個 `Usecase` 類別 `GetUsers` 和 `CreateUser` 的歸納。
+在測試驅動開發（TDD）的第三步，我們專注於定義應用的業務邏輯，即 `Usecases`。這些 `Usecases` 是應用中實現特定功能的元件，它們依賴於領域層的 `Repositories`。
 
 ## `GetUsers` Usecase
 

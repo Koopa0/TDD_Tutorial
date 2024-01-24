@@ -1,6 +1,6 @@
 # TDD 步驟 2: Domain - Repositories
 
-在測試驅動開發（TDD）的第二步，我們專注於定義領域層中的 `Repositories`。這些 `Repositories` 定義了應用程式與數據源之間的合約，並為業務邏輯層提供數據。以下是對您提供的 `AuthenticationRepository` 接口的歸納。
+在測試驅動開發（TDD）的第二步，我們專注於定義領域層中的 `Repositories`。這些 `Repositories` 定義了應用程式與數據源之間的合約，並為業務邏輯層提供數據。
 
 ## `AuthenticationRepository` 接口
 

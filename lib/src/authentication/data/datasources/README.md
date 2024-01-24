@@ -1,6 +1,6 @@
 # TDD 步驟 6: Data - DataSources
 
-在測試驅動開發（TDD）的第六步，我們關注數據層中的 `DataSources`。這些 `DataSources` 負責與外部數據源（例如 API）進行直接交互。以下是對您提供的 `AuthenticationRemoteDataSourceImpl` 的歸納。
+在測試驅動開發（TDD）的第六步，我們關注數據層中的 `DataSources`。這些 `DataSources` 負責與外部數據源（例如 API）進行直接交互。
 
 ## `AuthenticationRemoteDataSourceImpl` 類別
 

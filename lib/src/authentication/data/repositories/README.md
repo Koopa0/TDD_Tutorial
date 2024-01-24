@@ -1,6 +1,6 @@
 # TDD 步驟 5: Data - Repositories
 
-在測試驅動開發（TDD）的第五步，我們專注於實現數據層中的 `Repositories`。這些 `Repositories` 實現了領域層定義的接口，並負責與數據源進行交互。以下是對您提供的 `AuthenticationRepositoryImplementation` 的歸納。
+在測試驅動開發（TDD）的第五步，我們專注於實現數據層中的 `Repositories`。這些 `Repositories` 實現了領域層定義的接口，並負責與數據源進行交互。
 
 ## `AuthenticationRepositoryImplementation` 類別
 
