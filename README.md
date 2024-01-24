@@ -1,5 +1,6 @@
 # TDD_Tutorial
 
+[Note](https://maple-echinacea-d45.notion.site/Flutter-BLoC-TDD-Clean-Architecture-d8600a18cc9f4e1a953a104de7084784)
 ## 簡介
 
 此 Flutter 專案採用 Test-Driven Development (TDD) 和 Business Logic Component (BLoC) 模式。這種結合旨在提供高質量、可維護和可擴展的應用程序架構。
@@ -27,4 +28,36 @@ BLoC 是一種用於分離業務邏輯和介面的架構模式。它使用 Strea
 ## 為什麼選擇 TDD 和 BLoC
 
 結合 TDD 和 BLoC 的做法使我們能夠創建出更加健壯、可測試和可維護的 Flutter 應用程序。TDD 確保代碼質量和功能性，而 BLoC 提供清晰的架構分離，這使得代碼更容易理解和維護。
+
+在這個測試驅動開發（TDD）過程中，我們已經完成了從定義領域模型到實現數據層的重要步驟。
+
+## 步驟 1: Domain - Entities
+
+- **實體** (`Entities`)：定義了應用的核心數據模型，如 `User`，代表應用的業務邏輯和數據結構。
+- **測試**：確保實體符合預期的數據結構和行為。
+
+## 步驟 2: Domain - Repositories
+
+- **儲存庫** (`Repositories`)：作為數據層和業務邏輯層之間的橋樑，定義了數據存取的合約。
+- **測試**：驗證儲存庫的行為，包括數據存取和異常處理。
+
+## 步驟 3: Domain - Usecases
+
+- **用例** (`Usecases`)：封裝了特定的業務邏輯操作，如 `GetUsers` 和 `CreateUser`。
+- **測試**：確保用例按預期運作，包括成功和失敗情況的處理。
+
+## 步驟 4: Data - Model
+
+- **數據模型** (`Model`)：提供了實體的數據模型，如 `UserModel`，包括數據的序列化和反序列化。
+- **測試**：確保數據模型能正確處理數據轉換。
+
+## 步驟 5: Data - Repositories
+
+- **儲存庫實現** (`Repositories Implementation`)：實現了領域層儲存庫的具體操作，與數據源層交互。
+- **測試**：驗證儲存庫實現的功能，包括正確的數據存取和異常處理。
+
+## 步驟 6: Data - DataSources
+
+- **數據源** (`DataSources`)：與外部數據源（如 API）進行交互，為儲存庫層提供數據。
+- **測試**：確保數據源能正確地與外部系統交互，並處理不同的響應情況。
 
