@@ -25,6 +25,7 @@ void main() {
         () async {
       when(() => client.post(
             any(),
+            headers: {"Content-Type": "application/json"},
             body: any(named: "body"),
           )).thenAnswer(
         (_) async => http.Response("User created successfully", 201),
@@ -43,6 +44,7 @@ void main() {
       verify(
         () => client.post(
           Uri.https(kBaseUrl, kCreateUserEndpoint),
+          headers: {"Content-Type": "application/json"},
           body: jsonEncode({
             "createdAt": "createdAt",
             "name": "name",
@@ -58,6 +60,7 @@ void main() {
         () async {
       when(() => client.post(
             any(),
+            headers: {"Content-Type": "application/json"},
             body: any(named: "body"),
           )).thenAnswer(
         (_) async => http.Response("Invalid params", 400),
@@ -79,6 +82,7 @@ void main() {
       verify(
         () => client.post(
           Uri.https(kBaseUrl, kCreateUserEndpoint),
+          headers: {"Content-Type": "application/json"},
           body: jsonEncode({
             "createdAt": "createdAt",
             "name": "name",
